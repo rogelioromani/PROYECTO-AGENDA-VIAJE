@@ -20,30 +20,20 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Image Source="/Imagenes/fondo.jpg" VerticalAlignment="Top" Height="1000" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />
+        <Image Source="/Imagenes/fondo.jpg" VerticalAlignment="Top" Height="800" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />
 
-
- 
-
-        <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MI APLICACIÓN" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="nombre de la página" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        <!--el stacpanel contiene los dos botones-->
+        <StackPanel Grid.Row="1">
+            <Button Content="Planificar un viaje" Height="100"   Name="botónPlanificacion"
+            Width="300" Command="{Binding IrPlanificacion}" Foreground="Gold"
+             BorderBrush="Gold"/>
+            <Button Content="Durante el viaje" Height="100" x:Name="botónViajes" Width="300"
+            	Command="{Binding IrViajes}" Foreground="Gold" BorderBrush="Gold" RenderTransformOrigin="0.51,3.675" Margin="90,0"/>
         </StackPanel>
 
         <!--ContentPanel. Colocar aquí el contenido adicional-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        <Grid x:Name="ContentPanel" Grid.Row="1"/>
 
-        </Grid>
-
-        <!--Quitar la marca de comentarios para ver una cuadrícula de alineación que
-            ayuda a comprobar que los controles están alineados en los límites normales.  La imagen tiene un margen superior de -32px para
-            tener en cuenta la bandeja del sistema. Establécelo en 0 (o quite el margen)
-            si la bandeja del sistema está oculta.
-
-            Antes de enviarla, quita este código XAML y la propia imagen.-->
-        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
-    
     </Grid>
 
 </phone:PhoneApplicationPage>
