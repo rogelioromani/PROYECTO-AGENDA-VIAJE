@@ -22,6 +22,12 @@ namespace AgendaViaje
             //BuildLocalizedApplicationBar();
         }
 
+        private void Botón1_Click(object sender, RoutedEventArgs e)
+        {
+            Navegador.Navigate(new Uri(TextBox.Text, UriKind.Absolute));
+
+        }
+
         // Código de ejemplo para compilar una ApplicationBar traducida
         //private void BuildLocalizedApplicationBar()
         //{
