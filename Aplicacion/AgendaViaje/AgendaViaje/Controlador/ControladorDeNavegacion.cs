@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace AgendaViaje.Controlador
 {
    public class ControladorDeNavegacion
@@ -24,7 +25,7 @@ namespace AgendaViaje.Controlador
        private ControladorDeNavegacion()
        {
            registeredViews.Add("Planificacion",
-       new Uri(@"/Planificacion.xaml", UriKind.Relative));
+            new Uri(@"/Planificacion.xaml", UriKind.Relative));
            registeredViews.Add("Viajes",
                                        new Uri(@"/Viajes.xaml", UriKind.Relative));
        }

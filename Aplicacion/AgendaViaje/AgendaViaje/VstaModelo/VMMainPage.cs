@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace AgendaViaje.VstaModelo
 {
     public class VMMainPage
     {
-        private ICommand irPlanificacion;
+        private ICommand irPlanificacion; //el ICommand cone el uso de herramienta::: using System.Windows.Input
         private ICommand irViajes;
         public List<Viaje> listaViajes { get; set; }
 
@@ -24,7 +25,7 @@ namespace AgendaViaje.VstaModelo
         }
         void irPlanificacionExecute()
         {
-            controlador.ControladorDeNavegacion.Current.NavigateTo("Planificacion");
+            Controlador.ControladorDeNavegacion.Current.NavigateTo("Planificacion");
         }
         bool PuedeEjecutarIrPlanificacionExecute()
         {
