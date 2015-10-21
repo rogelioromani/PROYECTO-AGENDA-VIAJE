@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="es-ES" />
-  <App xmlns="" ProductID="{28744bbd-b176-4057-b28f-daa77d08a3e5}" Title="AgendaViaje" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="AgendaViaje author" Description="Sample description" Publisher="AgendaViaje" PublisherID="{a5f4ffc6-38b1-4332-ba6d-66f95e4ca912}">
+  <App xmlns="" ProductID="{f842db21-ce3a-4a5d-a6c7-a686b8d5d2c8}" Title="AgendaViaje" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="AgendaViaje author" Description="Sample description" Publisher="AgendaViaje" PublisherID="{ec46df2d-4b66-4f95-b0f5-ccc2f802cd10}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
