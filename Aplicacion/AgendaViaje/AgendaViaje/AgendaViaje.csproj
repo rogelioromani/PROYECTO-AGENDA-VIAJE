@@ -103,6 +103,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Descripcion.xaml.cs">
+      <DependentUpon>Descripcion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\EditaPlan.xaml.cs">
+      <DependentUpon>EditaPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\NuevoPlan.xaml.cs">
+      <DependentUpon>NuevoPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Viajes.xaml.cs">
+      <DependentUpon>Viajes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Planificacion.xaml.cs">
+      <DependentUpon>Planificacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ViajeConcreto.xaml.cs">
+      <DependentUpon>ViajeConcreto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VstaModelo\Base\DelegateCommand.cs" />
+    <Compile Include="VstaModelo\Base\VMBase.cs" />
+    <Compile Include="VstaModelo\VMDescripcion.cs" />
+    <Compile Include="VstaModelo\VMEditaPlan.cs" />
+    <Compile Include="VstaModelo\VMMainPage.cs" />
+    <Compile Include="VstaModelo\VMNuevoPlan.cs" />
+    <Compile Include="VstaModelo\VMPlanificacion.cs" />
+    <Compile Include="VstaModelo\VMViajeConcreto.cs" />
+    <Compile Include="VstaModelo\VMViajes.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -110,6 +137,30 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vista\Descripcion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vista\EditaPlan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vista\NuevoPlan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vista\Viajes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vista\Planificacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vista\ViajeConcreto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,8 +200,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modelo\" />
-    <Folder Include="Vista\" />
-    <Folder Include="VstaModelo\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
