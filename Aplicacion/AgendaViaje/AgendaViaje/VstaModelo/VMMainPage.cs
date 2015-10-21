@@ -24,7 +24,7 @@ namespace AgendaViaje.VstaModelo
         }
         void irPlanificacionExecute()
         {
-            controlador.ControladorDeNavegacion.Current.NavigateTo("Planificacion");
+            Controlador.ControladorDeNavegacion.Current.NavigateTo("Planificacion");
         }
         bool PuedeEjecutarIrPlanificacionExecute()
         {
