@@ -6,7 +6,32 @@ using System.Threading.Tasks;
 
 namespace AgendaViaje.VstaModelo.Base
 {
-    class DelegateCommand
+    public class DelegateCommand : ICommand
     {
+        Action execute;
+        Func<Boolean> CanExecuteMethod;
+        public DelegateCommand(Action commandExecute, Func<Boolean> canExecuteMethod)
+        {
+            execute = commandExecute;
+            CanExecuteMethod = canExecuteMethod;
+        }
+
+        bool ICommand.CanExecute(object parameter)
+        {
+            return CanExecuteMethod();
+        }
+
+        void ICommand.Execute(object parameter)
+        {
+            execute();
+        }
+
+        public event EventHandler CanExecuteChanged;
+
+        public void RaiseCanExecuteChanged()
+        {
+            if (CanExecuteChanged != null)
+                CanExecuteChanged(this, new EventArgs());
+        }
     }
 }
