@@ -28,7 +28,9 @@
 
         <!--ContentPanel. Colocar aquí el contenido adicional-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <TextBox Name="txtNombre" InputScope= "Text"   
+                Text="{Binding Nombre, Mode=TwoWay}" >               
+            </TextBox>
         </Grid>
     </Grid>
 
