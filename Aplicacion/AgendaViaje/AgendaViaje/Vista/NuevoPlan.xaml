@@ -27,10 +27,10 @@
         </StackPanel>
 
         <!--ContentPanel. Colocar aquí el contenido adicional-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox Name="txtNombre" InputScope= "Text"   
-                Text="{Binding Nombre, Mode=TwoWay}" >               
-            </TextBox>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,10,12,532">
+            <TextBlock Text="Nombre"></TextBlock>
+            <TextBox x:Name="nombre"></TextBox>
+            <TextBlock Text="fecha salida"></TextBlock>   
         </Grid>
     </Grid>
 

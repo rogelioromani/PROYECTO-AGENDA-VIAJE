@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.Phone.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Navigation;
 
 
 namespace AgendaViaje.Controlador
@@ -24,10 +27,8 @@ namespace AgendaViaje.Controlador
        static Dictionary<String, Uri> registeredViews = new Dictionary<String, Uri>();
        private ControladorDeNavegacion()
        {
-           registeredViews.Add("Planificacion",
-            new Uri(@"/Planificacion.xaml", UriKind.Relative));
-           registeredViews.Add("Viajes",
-                                       new Uri(@"/Viajes.xaml", UriKind.Relative));
+           registeredViews.Add("Planificacion", new Uri(@"/Planificacion.xaml", UriKind.Relative));
+           registeredViews.Add("Viajes", new Uri(@"/Viajes.xaml", UriKind.Relative));
        }
        public void NavigateTo(String destino)
        {
@@ -37,6 +38,11 @@ namespace AgendaViaje.Controlador
        void root_Navigated(object sender, NavigationEventArgs e)
        {
            NavigationMethod(e);
+       }
+
+       private void NavigationMethod(NavigationEventArgs e)
+       {
+           throw new NotImplementedException();
        }
        public void BackTo()
        {

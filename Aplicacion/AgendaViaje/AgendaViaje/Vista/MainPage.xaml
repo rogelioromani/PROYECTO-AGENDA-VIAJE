@@ -38,7 +38,6 @@
                 Command="{Binding IrViajes}" Foreground="Gold" BorderBrush="Gold"/>
             </StackPanel>
 
-
         </Grid>
 
     </Grid>

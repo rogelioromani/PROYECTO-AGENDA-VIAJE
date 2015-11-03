@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgendaViaje.VstaModelo
+namespace AgendaViaje.VistaModelo
 {
-    class VMViajeConcreto
+    public VMNuevoPlan()
     {
+        nombre = ""; 
+        presupuesto = 0;
     }
 }

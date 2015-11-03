@@ -21,6 +21,13 @@ namespace AgendaViaje.VistaModelo.Base
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
-
+        public void NotificarCambio(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this,
+                            new PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
 }

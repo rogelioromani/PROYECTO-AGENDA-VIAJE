@@ -93,9 +93,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Contexto\AppDbContext.cs" />
     <Compile Include="Controlador\ControladorDeNavegacion.cs" />
     <Compile Include="LocalizedStrings.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Vista\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +105,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Tablas\Dia.cs" />
+    <Compile Include="Tablas\Gasto.cs" />
+    <Compile Include="Tablas\Viaje.cs" />
     <Compile Include="Vista\Descripcion.xaml.cs">
       <DependentUpon>Descripcion.xaml</DependentUpon>
     </Compile>
@@ -122,22 +126,22 @@
     <Compile Include="Vista\ViajeConcreto.xaml.cs">
       <DependentUpon>ViajeConcreto.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VstaModelo\Base\DelegateCommand.cs" />
-    <Compile Include="VstaModelo\Base\VMBase.cs" />
-    <Compile Include="VstaModelo\VMDescripcion.cs" />
-    <Compile Include="VstaModelo\VMEditaPlan.cs" />
-    <Compile Include="VstaModelo\VMMainPage.cs" />
-    <Compile Include="VstaModelo\VMNuevoPlan.cs" />
-    <Compile Include="VstaModelo\VMPlanificacion.cs" />
-    <Compile Include="VstaModelo\VMViajeConcreto.cs" />
-    <Compile Include="VstaModelo\VMViajes.cs" />
+    <Compile Include="VistaModelo\Base\DelegateCommand.cs" />
+    <Compile Include="VistaModelo\Base\VMBase.cs" />
+    <Compile Include="VistaModelo\VMDescripcion.cs" />
+    <Compile Include="VistaModelo\VMEditaPlan.cs" />
+    <Compile Include="VistaModelo\VMMainPage.cs" />
+    <Compile Include="VistaModelo\VMNuevoPlan.cs" />
+    <Compile Include="VistaModelo\VMPlanificacion.cs" />
+    <Compile Include="VistaModelo\VMViajeConcreto.cs" />
+    <Compile Include="VistaModelo\VMViajes.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="Vista\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -193,6 +197,15 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Iconos\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Iconos\delete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Iconos\edit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
@@ -204,9 +217,7 @@
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modelo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>

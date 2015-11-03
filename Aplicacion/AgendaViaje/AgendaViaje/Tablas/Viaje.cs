@@ -11,12 +11,12 @@ using System.Windows.Shapes;
 using System.Data.Linq.Mapping;
 using System.Data.Linq;
 using System.ComponentModel;
-using AgendaViaje.VstaModelo.Base;
+using AgendaViaje.VistaModelo.Base;
 
 namespace AgendaViaje.Tablas
 {
     [Table(Name = "Viajes")]
-    public class Viaje : INotifyPropertyChanging
+    public class Dia : INotifyPropertyChanging
     {
         private int viajeId;
         private String nombre;
@@ -53,6 +53,22 @@ namespace AgendaViaje.Tablas
                 NotificarCambio("Nombre");
 
             }
-        } 
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void NotificarCambio(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        public event PropertyChangingEventHandler PropertyChanging;
+
+        public void OnPropertyChanging(string propertyName)
+        {
+            if (PropertyChanging != null)
+                PropertyChanging.Invoke(this, new PropertyChangingEventArgs(propertyName));
+        }
     }
 }

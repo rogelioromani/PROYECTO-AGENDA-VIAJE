@@ -25,6 +25,8 @@
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
+    
+    
 
 
     <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->

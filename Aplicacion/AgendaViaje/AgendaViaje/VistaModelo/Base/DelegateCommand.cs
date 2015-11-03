@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace AgendaViaje.VstaModelo.Base
+namespace AgendaViaje.VistaModelo.Base
 {
     public class DelegateCommand : ICommand
     {

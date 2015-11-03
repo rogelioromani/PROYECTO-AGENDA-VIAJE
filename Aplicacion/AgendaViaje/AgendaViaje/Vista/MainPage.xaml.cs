@@ -17,7 +17,7 @@ namespace AgendaViaje
         public MainPage()
         {
             InitializeComponent();
-            this.DataContext = new viewmodels.VMMainPage();
+            this.DataContext = new VistaModelo.VMMainPage();
         }        
     }
 }
