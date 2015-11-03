@@ -16,5 +16,10 @@ namespace AgendaViaje.Vista
         {
             InitializeComponent();
         }
+        private void NuevaPlanificacion(object sender, EventArgs e)
+        {
+            Contexto.IrNuevoPlan.Execute("{Binding IrNuevoPlan}");
+        }
+
     }
 }
