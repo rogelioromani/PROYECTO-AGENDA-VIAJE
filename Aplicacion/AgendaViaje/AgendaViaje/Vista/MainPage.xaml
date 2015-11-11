@@ -1,0 +1,45 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AgendaViaje.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+   
+        <!--TitlePanel contiene el nombre de la aplicación y el título de la página-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="MI APLICACIÓN" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="nombre de la página" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel. Colocar aquí el contenido adicional-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+
+            <StackPanel Grid.Row="1">
+                <Button Content="Planificar un viaje" Height="100"   Name="botónPlanificacion"
+                Width="300" Command="{Binding IrPlanificacion}" Foreground="Gold"
+                BorderBrush="Gold"/>
+                <Button Content="Durante el viaje" Height="100" Name="botónViajes" Width="300"
+                Command="{Binding IrViajes}" Foreground="Gold" BorderBrush="Gold"/>
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

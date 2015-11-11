@@ -1,3 +1,22 @@
+D:\AgendaViaje\AgendaViaje\Bin\Debug\Assets\ApplicationIcon.png
+D:\AgendaViaje\AgendaViaje\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+D:\AgendaViaje\AgendaViaje\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+D:\AgendaViaje\AgendaViaje\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+D:\AgendaViaje\AgendaViaje\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+D:\AgendaViaje\AgendaViaje\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+D:\AgendaViaje\AgendaViaje\Bin\Debug\AgendaViaje.dll
+D:\AgendaViaje\AgendaViaje\Bin\Debug\AgendaViaje.pdb
+D:\AgendaViaje\AgendaViaje\Bin\Debug\AppManifest.xaml
+D:\AgendaViaje\AgendaViaje\Bin\Debug\Properties\WMAppManifest.xml
+D:\AgendaViaje\AgendaViaje\Bin\Debug\AgendaViaje_Debug_AnyCPU.xap
+D:\AgendaViaje\AgendaViaje\obj\Debug\App.g.cs
+D:\AgendaViaje\AgendaViaje\obj\Debug\MainPage.g.cs
+D:\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.g.resources
+D:\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.Resources.AppResources.resources
+D:\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.csproj.GenerateResource.Cache
+D:\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.dll
+D:\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.pdb
+D:\AgendaViaje\AgendaViaje\obj\Debug\XapCacheFile.xml
 C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\Bin\Debug\Assets\ApplicationIcon.png
 C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
 C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
@@ -17,3 +36,11 @@ C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje
 C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.dll
 C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.pdb
 C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\XapCacheFile.xml
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\Vista\Descripcion.g.cs
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\Vista\EditaPlan.g.cs
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\Vista\NuevoPlan.g.cs
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\Vista\Viajes.g.cs
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\Vista\Planificacion.g.cs
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\Vista\ViajeConcreto.g.cs
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\AgendaViaje.csprojResolveAssemblyReference.cache
+C:\Users\RmaniFlores\Desktop\AGENDA DE VIAJES\Aplicacion\AgendaViaje\AgendaViaje\obj\Debug\Vista\MainPage.g.cs
