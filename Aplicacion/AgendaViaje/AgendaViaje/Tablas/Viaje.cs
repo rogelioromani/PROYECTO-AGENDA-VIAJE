@@ -16,10 +16,10 @@ using AgendaViaje.VistaModelo.Base;
 namespace AgendaViaje.Tablas
 {
     [Table(Name = "Viajes")]
-    public class Dia : INotifyPropertyChanging
+    public class Viaje : INotifyPropertyChanging
     {
         private int viajeId;
-        private String nombre;
+        private String nombre;  
         private DateTime fechaIni;
         private DateTime fechaFin;
         private int duracion;

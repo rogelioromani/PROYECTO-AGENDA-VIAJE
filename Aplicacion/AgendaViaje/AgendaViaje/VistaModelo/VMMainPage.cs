@@ -14,7 +14,7 @@ namespace AgendaViaje.VistaModelo
     {
         private ICommand irPlanificacion; //el ICommand cone el uso de herramienta::: using System.Windows.Input
         private ICommand irViajes;
-        public List<Dia> listaViajes { get; set; }
+        public List<Viaje> listaViajes { get; set; }
 
         public ICommand IrPlanificacion
         {

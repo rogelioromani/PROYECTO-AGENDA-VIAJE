@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Navigation;
+using AgendaViaje.Vista;
 
 
 namespace AgendaViaje.Controlador
@@ -24,16 +25,16 @@ namespace AgendaViaje.Controlador
                return current;
            }
        }
-       static Dictionary<String, Uri> registeredViews = new Dictionary<String, Uri>();
+       static Dictionary<String, Uri> registeredVista = new Dictionary<String, Uri>();
        private ControladorDeNavegacion()
        {
-           registeredViews.Add("Planificacion", new Uri(@"/Planificacion.xaml", UriKind.Relative));
-           registeredViews.Add("Viajes", new Uri(@"/Viajes.xaml", UriKind.Relative));
+           registeredVista.Add("Planificacion", new Uri(@"/Planificacion.xaml", UriKind.Relative));
+           registeredVista.Add("Viajes", new Uri(@"/Viajes.xaml", UriKind.Relative));
        }
        public void NavigateTo(String destino)
        {
            PhoneApplicationFrame rootFrame = App.Current.RootVisual as PhoneApplicationFrame;
-           rootFrame.Navigate(registeredViews[destino]);
+           rootFrame.Navigate(registeredVista[destino]);
        }
        void root_Navigated(object sender, NavigationEventArgs e)
        {

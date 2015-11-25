@@ -13,11 +13,8 @@
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
 
-   
-    
-    
-    <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+   <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
+    <Grid x:Name="LayoutRoot"  Background="{StaticResource imagenFondo}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -46,9 +43,7 @@
                 <shell:ApplicationBarMenuItem Text="Edita el viaje seleccionado"/>
                 <shell:ApplicationBarMenuItem Text="Elimina el viaje seleccionado"/>
             </shell:ApplicationBar.MenuItems>
-
         </shell:ApplicationBar>
-
     </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>

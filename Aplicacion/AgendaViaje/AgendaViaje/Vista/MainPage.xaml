@@ -31,7 +31,7 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
 
             <StackPanel Grid.Row="1">
-                <Button Content="Planificar un viaje" Height="100"   Name="botónPlanificacion"
+                <Button Content="Planificar un viaje" Height="100" Name="botónPlanificacion"
                 Width="300" Command="{Binding IrPlanificacion}" Foreground="Gold"
                 BorderBrush="Gold"/>
                 <Button Content="Durante el viaje" Height="100" Name="botónViajes" Width="300"
