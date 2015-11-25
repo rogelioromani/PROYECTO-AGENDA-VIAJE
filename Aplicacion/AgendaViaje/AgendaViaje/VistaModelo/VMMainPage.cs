@@ -1,4 +1,5 @@
-﻿using AgendaViaje.Tablas;
+﻿using AgendaViaje.VistaModelo.Base;
+using AgendaViaje.Tablas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace AgendaViaje.VistaModelo.Base
+
+namespace AgendaViaje.VistaModelo
 {
     public class VMMainPage
     {

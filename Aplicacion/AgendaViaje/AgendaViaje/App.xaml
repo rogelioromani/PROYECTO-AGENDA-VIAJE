@@ -8,6 +8,7 @@
     <!--Recursos de la aplicación-->
     <Application.Resources>
         <local:LocalizedStrings xmlns:local="clr-namespace:AgendaViaje" x:Key="LocalizedStrings"/>
+        <ImageBrush x:Name="imagenFondo" ImageSource="/AgendaViaje;component/Imagenes/fondo.png"></ImageBrush>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>
