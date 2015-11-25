@@ -13,22 +13,22 @@ namespace AgendaViaje.Contexto
     {
         public AppDbContext(string cadenaDeConexion)
             : base(cadenaDeConexion) { }
-         public Table<Dia> Viajes
+         public Table<Viaje> Viajes
         {
-            get { return this.GetTable<Dia>(); }
+            get { return this.GetTable<Viaje>(); }
         }
-         public Table<Dia> Dias
+         public Table<Viaje> Dias
          {
-             get { return this.GetTable<Dia>(); }
+             get { return this.GetTable<Viaje>(); }
          }
-         public Table<Gasto> Gastos
-         {
-             get { return this.GetTable<Gasto>(); }
-         }
+         //public Table<Gasto> Gastos
+         //{
+         //    get { return this.GetTable<Gasto>(); }
+         //}
     }
-    [Association(Storage = "Dias", OtherKey = "ViajeId")]
-    public EntitySet<Dia> Dias { get; set; }
+    //[Association(Storage = "Dias", OtherKey = "ViajeId")]
+    //public EntitySet<Dia> Dias { get; set; }
 
-    [Association(Storage = "Gastos", OtherKey = "ViajeId")]
-    public EntitySet<Gasto> Gastos { get; set; } 
-}
+    //[Association(Storage = "Gastos", OtherKey = "ViajeId")]
+    //public EntitySet<Gasto> Gastos { get; set; } 
+    }

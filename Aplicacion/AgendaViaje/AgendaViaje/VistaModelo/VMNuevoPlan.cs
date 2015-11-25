@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AgendaViaje.VistaModelo
 {
-    public VMNuevoPlan()
+    public class VMNuevoPlan
     {
-        nombre = ""; 
-        presupuesto = 0;
+       public string nombre = ""; 
+       public int presupuesto = 0;
     }
 }
