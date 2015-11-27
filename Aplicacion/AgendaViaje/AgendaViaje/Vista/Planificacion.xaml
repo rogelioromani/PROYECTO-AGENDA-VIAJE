@@ -35,9 +35,9 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="\Iconos\add.png" Text="Añadir" Click="NuevaPlanificacion"/>
-            <shell:ApplicationBarIconButton IconUri="\Iconos\edit.png" Text="Editar"/>
-            <shell:ApplicationBarIconButton IconUri="\Iconos\delete.png" Text="Eliminar"/>
+            <shell:ApplicationBarIconButton IconUri="/Iconos/add.png" Text="Añadir" Click="NuevaPlanificacion"/>
+            <shell:ApplicationBarIconButton IconUri="/Iconos/edit.png" Text="Editar"/>
+            <shell:ApplicationBarIconButton IconUri="/Iconos/delete.png" Text="Eliminar"/>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="Añadir un nuevo destino" Click="NuevaPlanificacion"/>
                 <shell:ApplicationBarMenuItem Text="Edita el viaje seleccionado"/>
